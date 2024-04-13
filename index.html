@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaburia.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+</script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+     <script type="text/javascript"> 
+function disableRightClick() 
+{ 
+alert("Did you Know Kaburia is a Kaggle certified Data Analyst?"); 
+return false; 
+} 
+</script> 
+</head>
+<body oncontextmenu=" return disableRightClick();">
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome to </p>
+            <h1>Minimal Traders<span></span><br> Developers <br>Since <span>1997<span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p> "We are a creative group of people who design
+influential brands and digital experiences.Our digital software development agency is committed to delivering cutting-edge solutions that empower businesses to thrive in the digital landscape. With a focus on innovation and quality, we leverage the latest technologies to create impactful software products tailored to meet our clients' unique needs. Our team of skilled developers, designers, and strategists collaborate seamlessly to bring your ideas to life. Whether you're looking to build a custom web application, develop a mobile app, or optimize your existing software infrastructure, we have the expertise to drive your project to success.  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Mission</p>
+                    <p class="tab-links" onclick="opentab('experience')">Vision</p>
+                    <p class="tab-links" onclick="opentab('education')">Our policy</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>1. Innovating tailored software for business growth."</span><br></li>
+                        <li><span>2. Connecting people through intuitive software experiences."</span><br></li>
+                        <li><span>3. Engineering secure solutions for organizational success.</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Vision 1</span><br>"Pioneering a future where technology seamlessly enhances human potential and connectivity.</li>
+                        <li><span>Vision 2</span><br>Envisioning a world where software solutions drive sustainable growth and innovation across industries.</li>
+                        <li><span>Vision 3</span><br>"Striving towards a digital landscape where security, scalability, and user-centric design are paramount, fostering trust and efficiency."</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Accountability</span><br>We prioritize transparency and accountability in all our operations, fostering trust and long-term partnerships with our clients.</li>
+                        <li><span>Diversity</span><br>We are committed to diversity, equity, and inclusion, fostering a culture where every individual's unique talents and perspectives are valued and respected."</li>
+                        <li><span>Quality Standards</span><br>We adhere to strict ethical standards and regulatory compliance in every aspect of our software development process, ensuring the integrity and security of our solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Mobile App Development</h2>
+                <p>Reach your audience on the go with engaging and intuitive mobile applications crafted for iOS and Android platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Custom Software Development</h2>
+                <p>Transform your vision into reality with our bespoke software solutions tailored to meet your specific business needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Web Design</h2>
+                <p>Elevate your online presence with cutting-edge web development services, from dynamic websites to complex web applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Our Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="excel.jpeg">
+                <div class="layer">
+                    <h3>UI/UX Design</h3>
+                    <p>Create intuitive and visually appealing user interfaces that enhance user experience and drive engagement.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="rstudio.jpeg">
+                <div class="layer">
+                    <h3>Software Maintenance & Support</h3>
+                    <p>Ensure the seamless operation of your software products with our comprehensive maintenance and support services.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="visual.jpeg">
+                <div class="layer">
+                    <h3>Digital Transformation</h3>
+                    <p>Stay ahead of the curve with our digital transformation services, leveraging the latest technologies to drive innovation and efficiency.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fas fa-paper-plane"></i>minimaltraders@gmail.com</p>
+                <a href="https://wa.me/+254701806159" download class="btn btn2">lets Chat on Whatsapp</a>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="linkhere" download class="btn btn2">Start a New Project</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Minimal traders 2024 <i class="fas fa-heart"></i> <a href="www.google.com"></a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxchCuKgcl3duaefR9U9sMHwY6f-gl0UzNdLyx9sKRptPiRb2nxx1moe0a9tQGbT7mD/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully, we will respond as soon as possible."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
